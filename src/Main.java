@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        String [] employees = {
+      /*  String [] employees = {
                 "Oleg",
                 "Masha",
                 "Natasha",
@@ -15,6 +15,18 @@ public class Main {
         employees = second;
         for(String name: employees){
             System.out.println(name);
+
+        }*/
+        MyArrayList MyArrayList = new MyArrayList();
+        MyArrayList.add("Oleg");
+        MyArrayList.add("Masha");
+        MyArrayList.add("Natasha");
+        MyArrayList.add("Igor");
+        MyArrayList.add("Ivan");
+        for(int i = 0; i< MyArrayList.getSize(); i++){
+            System.out.println(MyArrayList.getArray()[i]);
         }
+        System.out.println(MyArrayList.get(9));
+        System.out.println(MyArrayList.get(4));
     }
 }
