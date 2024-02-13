@@ -31,7 +31,11 @@ class MyArrayList implements MyList {
 
     @Override
     public void remove(int index) {
-
+        if (index >= 0 && index < size){
+            for( int i = index; i < size - 1; i++){
+                array[i] = array[i+1];
+            }
+        }
     }
 
     @Override
